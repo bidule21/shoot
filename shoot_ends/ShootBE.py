@@ -1,5 +1,5 @@
 from db import ShootDB
-from analysis import 
+from analysis import
 import cPickle as pickle
 
 

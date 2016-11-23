@@ -37,20 +37,20 @@
     <splitter split-orientation="vertical" split-proportion="0.527027">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ShootBE.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ShootBE.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/shoot_ends/ShootBE.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="13">
-                  <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+                  <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="get_record_test.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="get_record_test.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/get_record_test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
+                <state relative-caret-position="143">
                   <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
                   <folding>
                     <marker date="1479901471000" expanded="true" signature="427:467" ph="SELECT * FRO... missing_value" />
@@ -67,7 +67,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ShootDB.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ShootDB.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/db/ShootDB.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="906">
@@ -84,11 +84,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ShootAnalysis.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ShootAnalysis.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/analysis/ShootAnalysis.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+                <state relative-caret-position="39">
+                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -118,8 +118,8 @@
         <option value="$PROJECT_DIR$/shoot_ends/shoot_be.py" />
         <option value="$PROJECT_DIR$/test/get_record_test.py" />
         <option value="$PROJECT_DIR$/db/ShootDB.py" />
-        <option value="$PROJECT_DIR$/analysis/ShootAnalysis.py" />
         <option value="$PROJECT_DIR$/shoot_ends/ShootBE.py" />
+        <option value="$PROJECT_DIR$/analysis/ShootAnalysis.py" />
       </list>
     </option>
   </component>
@@ -198,7 +198,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -666,28 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/get_record_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-          <folding>
-            <marker date="1479901471000" expanded="true" signature="427:467" ph="SELECT * FRO... missing_value" />
-            <marker date="1479901471000" expanded="true" signature="647:693" ph="SELECT (miss... missing_value" />
-            <marker date="1479901471000" expanded="true" signature="897:951" ph="SELECT missi... missing_value" />
-            <marker date="1479901471000" expanded="true" signature="1161:1210" ph="SELECT * FRO... missing_value" />
-            <marker date="1479901471000" expanded="true" signature="1381:1412" ph="SELECT * FRO... missing_value" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/ShootAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/ShootDB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="906">
@@ -706,7 +684,29 @@
     <entry file="file://$PROJECT_DIR$/shoot_ends/ShootBE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/get_record_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding>
+            <marker date="1479901471000" expanded="true" signature="427:467" ph="SELECT * FRO... missing_value" />
+            <marker date="1479901471000" expanded="true" signature="647:693" ph="SELECT (miss... missing_value" />
+            <marker date="1479901471000" expanded="true" signature="897:951" ph="SELECT missi... missing_value" />
+            <marker date="1479901471000" expanded="true" signature="1161:1210" ph="SELECT * FRO... missing_value" />
+            <marker date="1479901471000" expanded="true" signature="1381:1412" ph="SELECT * FRO... missing_value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/ShootAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
