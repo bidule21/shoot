@@ -7,13 +7,21 @@ class ShootDB:
 
     def __init__(self, db_path):
         print(ShootDB.__init__)
+
+        # print db_path var
+        print('> db_path: ' + db_path)
+
+        # get path of enclosing directory
+        self.dir_path = os.path.dirname(os.path.realpath(__file__))
+        print('> dir_path:' + self.dir_path)
+
         # store database path in class variable
         self._db_path = db_path
-        self._db_path_abs = os.path.abspath(db_path)
+        # get absolute version of path
+        self._db_default_path_abs = self.dir_path + db_path
+        self._db_path_abs = self._db_default_path_abs
+        print('> abs db path: ' + self._db_path_abs)
         # print(self._db_path_abs)
-
-        # initialise table fields list
-        # self.table_fields = []
 
         # create/open sql db
         if self._db_path_abs != '':
@@ -56,7 +64,22 @@ class ShootDB:
         # executes the add table command
         self.cursor.execute(shooter_sql_command)
 
-    # This method currently only uses fetchone. It needs to be configured to get a certain record based on a specified
+    def get_headings(self):
+        print(ShootDB.get_headings)
+        # initialise column headings
+        column_headings = list()
+        column_command = "SELECT * FROM shoot_data"
+        self.cursor.execute(column_command)
+
+        desc = self.cursor.description
+        print(' {}'.format(desc))
+
+        for column_count in range(len(desc)):
+            desc_element = desc[column_count]
+            column_headings.append(desc_element[0])
+        print(' {}'.format(column_headings))
+        return column_headings
+
     # index or keyword
     def get_record(self, record_index):
         # c.execute('SELECT * FROM {tn} WHERE {cn}="Hi World"'. \
@@ -67,6 +90,12 @@ class ShootDB:
         self.cursor = self.db.execute(fetch_command, record_index_str)
         res = self.cursor.fetchall()
         return res
+
+    def get_all_records(self):
+        fetch_command = "SELECT * FROM shoot_data"
+        self.cursor.execute(fetch_command)
+        data = self.cursor.fetchall()
+        return data
 
     def add_record(self, shoot_data_list):
         print(ShootDB.add_record)
@@ -86,9 +115,9 @@ class ShootDB:
 # TEST CODE
 
 # create an instance of ShootDB for testing
-shoot = ShootDB('db_src/shoot_db.db')
-shoot_data = [("2016-11-21", "Willem", "van Hoof", "10,10,9,10,8,8,10,9,8,10", 92, "Live", "25", "Russian Scoped",
-               "Sitting", "Supported")]
-shoot.add_record(shoot_data)
-record = shoot.get_record(0)
-print('record:\n' + str(record))
+# shoot = ShootDB('/db_src/shoot_db.db')
+# shoot_data = [("2016-11-21", "Willem", "van Hoof", "10,10,9,10,8,8,10,9,8,10", 92, "Live", "25", "Russian Scoped",
+#                "Sitting", "Supported")]
+# shoot.add_record(shoot_data)
+# record = shoot.get_record(0)
+# print('record:\n' + str(record))
